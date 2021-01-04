@@ -34,18 +34,18 @@ class TrashBin {
 
         push();
         translate(rpos.x, rpos.y);
-        imageMode(CENTER);
+        rectMode(CENTER);
         noStroke();
         fill("chocolate");
-        image(this.image, 0, 0, this.width/10, this.height);
+        rect(0, 0, this.width/10, this.height);
         pop();
 
         push();
         translate(lpos.x, lpos.y);
-        imageMode(CENTER);
+        rectMode(CENTER);
         noStroke();
         fill("chocolate");
-        image(this.image, 0, 0, this.width/10, this.height);
+        rect(0, 0, this.width/10, this.height);
         pop();
     }
 }
